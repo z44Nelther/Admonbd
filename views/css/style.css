@@ -1,0 +1,70 @@
+﻿@font-face {
+  font-family: "Franchise-Bold";
+  src: url("../fonts/Franchise-Bold.ttf");
+}
+#maindiv{
+	background-image:url("../img/bg_stone_3.jpg");
+	background-position:50% 100%;
+  	
+}	}
+#bar{
+	margin-top:1em;
+}
+.hero p{
+font-family:'Poiret One';
+color:white;
+}
+.hero #tittle{
+	margin-top:1em;
+}
+.hero #bot{
+	margin-bottom:7.5em;
+}
+.buttonbar{
+	background-color:black;
+}
+aside{
+  margin-left:7.5em;
+}
+.botimages{
+	width:327px;
+}
+
+.theader{
+	background-image:url('../img/silver_bar.jpg');
+	color:white;
+	
+}
+
+.Registro{
+	margin-left:130px;
+	font-family:"Franchise-Bold";
+	color:#D3D3D3;
+	font-size:200%;
+
+}
+
+.proxE{
+	font-family:"Franchise-Bold";
+	color:#D3D3D3;
+}
+.comienza{
+	background-image:url('../img/get_started_spanish.jpg');
+	background-repeat:no-repeat;
+	background-position:0 0;
+	width: 227px;
+	height: 461px;
+	}
+table{
+	color:white;
+}
+.btn {
+	background-color:black;
+	
+	border-color:gray;
+}
+
+.btn:hover {
+	background-color:gray;
+	border-color:gray;
+}
