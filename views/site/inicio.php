@@ -1,11 +1,13 @@
 <?php
   include ('../layouts/header.php');
-  include ('../../models/modelo.php');
   include ('../../models/Conexion.php');
+  include ('../../models/modelo.php');
   include ('../../models/JobsTest.php');
+  
+  $JTest= new JobsTest();
+
 ?>
 
-$JTest= new JobsTest();
 
 <div class="row">
 	<div class="col-md-12 text-center" id="maindiv">

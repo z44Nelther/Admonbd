@@ -1,5 +1,5 @@
 <?php
-class JobsTest{
+class JobsTest extends modelo{
 	public $nombre_tabla = 'jobs';
     public $pk = 'job_id';
     
