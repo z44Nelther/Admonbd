@@ -22,6 +22,9 @@ $JTest= new JobsTest();
 			</thead>
 			
 			<?php
+			
+			   $JTest->consulta_datos();
+			   
 				while ($row = $JTest->oci_fetch_array(JTest->$stid, JTest->OCI_ASSOC+OCI_RETURN_NULLS)) {
    						 print "<tr>\n";
    						 foreach ($row as $item) {
