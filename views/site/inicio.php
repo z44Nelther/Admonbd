@@ -24,16 +24,7 @@ $JTest= new JobsTest();
 			<?php
 			
 			   $JTest->consulta_datos();
-			   
-				while ($row = $JTest->oci_fetch_array(JTest->$stid, JTest->OCI_ASSOC+OCI_RETURN_NULLS)) {
-   						 print "<tr>\n";
-   						 foreach ($row as $item) {
-      					  print "    <td>" . ($item !== null ? htmlentities($item, ENT_QUOTES) : "&nbsp;") . "</td>\n";
-    					 }
-   					 print "</tr>\n";
-				}
 			?>
-			
 			<!--
 				<tr>
 					<td>26/05/2014</td>
