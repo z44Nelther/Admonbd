@@ -11,7 +11,7 @@ class er {
 	}	
 	
 	function username ($username){
-		if (preg_match('/^[a-z\d_]{4,28}$/i', $username)) {
+		if (preg_match('/^[a-z\d_]{2,28}$/i', $username)) {
         	return true;
 		}else{
 			return false;
