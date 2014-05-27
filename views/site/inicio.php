@@ -34,6 +34,7 @@ include ('../../models/Conexion.php');
                 <td><?php $value['id_ciudad'];?></td>
                 <td><?php $value['desc_ciudad'];?></td>
             </tr>
+            <?php } ?>
 			<!--
 				<tr>
 					<td>26/05/2014</td>
