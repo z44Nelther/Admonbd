@@ -22,8 +22,7 @@ include ('../../models/Conexion.php');
 			<thead class="theader" >
 				<th class="text-center">Fecha</th>
 				<th class="text-center">Torneo</th>
-				<th class="text-center"># de Equipos</th>
-				<th class="text-center">Pais</th>			
+						
 			</thead>
 			
 			<?php
