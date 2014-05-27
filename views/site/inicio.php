@@ -2,10 +2,10 @@
   include ('../../libs/adobd5/adobd-pager.inc.php');
   include ('../../libs/adobd5/adobd.inc.php');
   include ('../layouts/header.php');
-  
+include ('../../models/Conexion.php');
   include ('../../models/modelo.php');
   include ('../../models/JobsTest.php');
-include ('../../models/Conexion.php');
+  
   
   $JTest= new JobsTest();
 
