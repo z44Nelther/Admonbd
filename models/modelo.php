@@ -6,7 +6,7 @@ function Modelo() {
     }
 	
 public function consulta_datos() {
-	$stid = oci_parse($conn, 'SELECT * FROM' . $this->nombre_tabla);
+	$stid = oci_parse($c, 'SELECT * FROM' . $this->nombre_tabla);
 	$rs=oci_execute($stid);
 	return $rs;
 }
