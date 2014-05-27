@@ -16,7 +16,7 @@ class Conexion {
 	}
 	
 	function get_c(){
-		return $c;
+		return $this->c;
 	} 
 }
 ?>
