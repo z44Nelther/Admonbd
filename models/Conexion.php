@@ -5,7 +5,7 @@ error_reporting(E_ALL|E_STRICT);
 	
 class Conexion {
 	public $c;
-	public $hola='hola';
+	public $hola="hola";
 		function Conexion(){
 		$c = oci_pconnect("prac51","prac51","127.0.0.1/admonbd2");
 		echo "".$c; 
