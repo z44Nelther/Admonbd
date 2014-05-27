@@ -7,8 +7,8 @@ function Modelo() {
 	
 public function consulta_datos() {
 	echo "Consultando";
-	echo "".$this->$this->hola;
-	$stid = oci_parse($this->c, 'SELECT * FROM' . $this->nombre_tabla);
+	
+	$stid = oci_parse($this->get_c(), 'SELECT * FROM' . $this->nombre_tabla);
 	echo "Consultando-Select";
 	$rs=oci_execute($stid);
 	return $rs;
