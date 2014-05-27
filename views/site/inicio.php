@@ -28,9 +28,10 @@ include ('../../models/Conexion.php');
 			
 			<?php
 			    
-             $rs=($JTest->consulta_datos())->fetchAll();
-                
-                foreach($rs as $row){
+             $rs=$JTest->consulta_datos();
+             $rows=$rs->fetchAll();
+
+                foreach($rows as $row){
 			?>
                 <tr>
                     <td><?php echo $row[ID_CIUDAD]; ?></td>
