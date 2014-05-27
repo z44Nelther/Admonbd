@@ -22,7 +22,10 @@ include ('../../models/Conexion.php');
 			<thead class="theader" >
 				<th class="text-center">Fecha</th>
 				<th class="text-center">Torneo</th>
-						
+                <th class="text-center">Juego</th>
+				<th class="text-center">Cupo</th>
+                <th class="text-center">Costo</th>
+							
 			</thead>
 			
 			<?php
@@ -32,8 +35,12 @@ include ('../../models/Conexion.php');
                 foreach($rs as $row){
 			?>
                 <tr>
-                    <td><?php echo $row[ID_CIUDAD]; ?></td>
-                    <td><?php echo $row[DESC_CIUDAD]; ?></td>
+                    <td><?php echo $row[FECHA_INICIO]; ?></td>
+                    <td><?php echo $row[NOM_TORNEO]; ?></td>
+                    <td><?php echo $row[ID_JUEGO]; ?></td>
+                    <td><?php echo $row[MAX_PARTICIPANTES]; ?></td>
+                    <td><?php echo $row[COSTO]; ?></td>
+                    
                 </tr>
           <?php } ?>
 			<!--
