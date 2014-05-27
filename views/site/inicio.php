@@ -30,6 +30,8 @@ include ('../../models/Conexion.php');
              $rs=$JTest->consulta_datos();
              $rows=$rs->fetchAll();
 
+                print_r($rows);
+
                 foreach($rows as $row){
 			?>
                 <tr>
