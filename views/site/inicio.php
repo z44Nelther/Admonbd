@@ -25,12 +25,14 @@
 			
 			<?php
 			
-			   
-			   if(count($JTest->consulta_datos())>0){
+			   $JTest->consulta_datos()
+			  
+			  /* if(count()>0){
 			   echo "consulta realizada";
 			   }else{
 				echo "consulta no realizada";
-			   }
+			   }*/
+			   
 			?>
 			<!--
 				<tr>
