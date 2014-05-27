@@ -28,7 +28,7 @@ include ('../../models/Conexion.php');
 			
 			<?php
 			    
-                print_r($JTest->consulta_datos());
+               // print_r($JTest->consulta_datos());
             
 			?>
         
