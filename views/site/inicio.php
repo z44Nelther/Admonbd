@@ -31,7 +31,7 @@
 			   echo "consulta realizada";
 			   }else{
 				echo "consulta no realizada";
-			   
+			   }
 			   
 			?>
 			<!--
