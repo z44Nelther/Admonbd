@@ -28,6 +28,7 @@ include ('../../models/Conexion.php');
 			
 			<?php
 			   $rs = $JTest->consulta_datos();  
+                print_r($rs);
             foreach ($rs as $value) {
 			?>
             <tr>
