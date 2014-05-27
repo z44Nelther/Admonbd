@@ -25,8 +25,8 @@
 			
 			<?php
 			
-			   $rs=$JTest->consulta_datos();
-			   if(count($rs)>0){
+			   
+			   if(count($JTest->consulta_datos())>0){
 			   echo "consulta realizada";
 			   }else{
 				echo "consulta no realizada";
