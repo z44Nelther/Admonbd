@@ -29,12 +29,9 @@ include ('../../models/Conexion.php');
 			<?php
 			    
                 print_r($JTest->consulta_datos());
-            foreach ($JTest->consulta_datos() as $value) {
+            
 			?>
-            <tr>
-                <td><?php $value['id_ciudad'];?></td>
-                <td><?php $value['desc_ciudad'];?></td>
-            </tr>
+        
             <?php } ?>
 			<!--
 				<tr>
