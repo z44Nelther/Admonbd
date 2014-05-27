@@ -5,10 +5,10 @@ error_reporting(E_ALL|E_STRICT);
 
 class Modelo  {
 
-	public $c;
+	public $coci_pconnect("prac51","prac51","127.0.0.1/admonbd2");;
 
 function Modelo() {
-        $c=oci_pconnect("prac51","prac51","127.0.0.1/admonbd2");
+        
         if (!$c) {
 			echo "error con la conexion";	   
 		}
