@@ -35,7 +35,7 @@ include ('../../models/Conexion.php');
 			?>
                 <tr>
                     <td><?php echo $row[ID_CIUDAD]; ?></td>
-                    <td><?php echo $row[[DESC_CIUDAD]; ?></td>
+                    <td><?php echo $row[DESC_CIUDAD]; ?></td>
                 </tr>
           <?php } ?>
 			<!--
