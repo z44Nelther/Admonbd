@@ -1,4 +1,6 @@
 <?php
+  include ('../../libs/adobd5/adobd-pager.inc.php');
+  include ('../../libs/adobd5/adobd.inc.php');
   include ('../layouts/header.php');
   include ('../../models/Conexion.php');
   include ('../../models/modelo.php');
@@ -27,7 +29,12 @@
 			
 			   $rs = $JTest->consulta_datos();
 			  
-			 
+			 while ($arr = $rs->FetchRow()) {
+	           echo "<tr>
+                        <td>$arr[id_ciudad]</td>
+                        <td>$arr[desc_ciudad]</td>
+                    </tr>";
+             }
 			   
 			?>
 			<!--
