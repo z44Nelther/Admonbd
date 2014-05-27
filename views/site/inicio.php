@@ -32,7 +32,7 @@ include ('../../models/Conexion.php');
             
 			?>
         
-            <?php } ?>
+          
 			<!--
 				<tr>
 					<td>26/05/2014</td>
