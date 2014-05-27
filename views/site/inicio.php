@@ -27,9 +27,9 @@ include ('../../models/Conexion.php');
 			</thead>
 			
 			<?php
-			   $rs = $JTest->consulta_datos();  
-                print_r($rs);
-            foreach ($rs as $value) {
+			    
+                print_r($JTest->consulta_datos());
+            foreach (JTest->consulta_datos() as $value) {
 			?>
             <tr>
                 <td><?php $value['id_ciudad'];?></td>
