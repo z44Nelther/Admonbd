@@ -1,7 +1,7 @@
 <?php
 class JobsTest extends modelo{
-	public $nombre_tabla = 'ciudad';
-    public $pk = 'id_ciudad';
+	public $nombre_tabla = 'Torneo';
+    public $pk = 'id_torneo';
     
     public $atributos= array(
     	'job_title'=>array(),
