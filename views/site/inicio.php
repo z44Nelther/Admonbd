@@ -25,13 +25,13 @@
 			
 			<?php
 			
-			   $JTest->consulta_datos()
+			   $rs=$JTest->consulta_datos()
 			  
-			  /* if(count()>0){
+			  if(count$rs)>0){
 			   echo "consulta realizada";
 			   }else{
 				echo "consulta no realizada";
-			   }*/
+			   
 			   
 			?>
 			<!--
