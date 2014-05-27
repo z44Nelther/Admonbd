@@ -1,19 +1,17 @@
 <?php
+error_reporting(E_ALL|E_STRICT);
+	ini_set('display_errors', 'On'); 
+	oci_internal_debug(1);
 	
 class Conexion {
-	private $c;
+	public $c;
 	
 		function Conexion(){
-			$this->c = oci_pconnect("prac51","prac51","127.0.0.1/admonbd2");
-			echo "".$this->c; 
-				  //$c = ocilogon("prac51","prac51","admonbd2")
+		$c = oci_pconnect("prac51","prac51","127.0.0.1/admonbd2");
+		  //$c = ocilogon("prac51","prac51","admonbd2");
 		if (!$c) {
 			echo "error con la conexion";	   
 		}
 	}
-	
-	function get_c(){
-		return $this->c;
-	} 
 }
 ?>
