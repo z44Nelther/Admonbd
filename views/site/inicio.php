@@ -27,17 +27,13 @@ include ('../../models/Conexion.php');
 			</thead>
 			
 			<?php
-			
-			   $rs = $JTest->consulta_datos();
-			  
-			 while ($arr = $rs->FetchRow()) {
-	           echo "<tr>
-                        <td>$arr[id_ciudad]</td>
-                        <td>$arr[desc_ciudad]</td>
-                    </tr>";
-             }
-			   
+			   $rs = $JTest->consulta_datos();  
+            foreach ($rs as $value) {
 			?>
+            <tr>
+                <td><?php $value['id_ciudad'];?></td>
+                <td><?php $value['desc_ciudad'];?></td>
+            </tr>
 			<!--
 				<tr>
 					<td>26/05/2014</td>
