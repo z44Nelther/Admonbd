@@ -1,4 +1,4 @@
-<?php define('BASEURL','http://localhost/admondb/Admonbd'); 
+<?php define('BASEURL','http://192.168.0.5/admondb/Admonbd'); 
  
  ?>
 <!DOCTYPE html>
