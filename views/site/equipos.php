@@ -29,8 +29,20 @@
              $rs=$Eq->consulta_datos();
              foreach($rs as $row){ 
             ?>
-             <tr>
-                    <td><?php echo $row['NOM_EQUIPO']; ?></td>
+             <tr> <form  method="POST">
+                    <td>
+                        
+                       
+					    <div class="form-group <? echo $aux;?> ">
+						<label for="Altura">Username: </label>
+						<input class="form-control" name="username" type="text" value="<?php echo $row['NOM_EQUIPO']; ?>">
+						
+						
+					    </div>
+                     </td>   </form>
+                        
+                        
+                        
                     <td><?php echo $row['VICTORIAS']; ?></td>
                     <td><?php echo $row['DERROTAS']; ?></td>
                     <td><input type="submit" value="Elegir equipo" class="btn btn-primary btn-xs"/></td>
