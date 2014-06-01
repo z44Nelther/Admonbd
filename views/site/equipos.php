@@ -32,7 +32,8 @@
              <tr> <form  method="POST">
                     <td>
 					    <div class="form-group">
-					    <input class="form-control" style="background-color:transparent; " name="username" type="text" value="<?php echo $row['NOM_EQUIPO']; ?>" readonly>
+					    <input class="form-control transparente text-center" name="username" type="text" 
+                               value="<?php echo $row['NOM_EQUIPO']; ?>" readonly>
 						</div>
                      </td>   
                   </form>
