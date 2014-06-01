@@ -31,12 +31,11 @@
             ?>
              <tr> <form  method="POST">
                     <td>
-                        
-                       
 					    <div class="form-group">
-					    <input class="form-control" name="username" type="text" value="<?php echo $row['NOM_EQUIPO']; ?>">
+					    <input class="form-control" name="username" type="text" value="<?php echo $row['NOM_EQUIPO']; ?>" readonly>
 						</div>
-                     </td>   </form>
+                     </td>   
+                  </form>
                         
                         
                         
