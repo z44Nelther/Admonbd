@@ -7,7 +7,7 @@ function Modelo() {
     
 	public function consulta_datos() {
         $rs = $this->db->Execute('SELECT * from ' . $this->nombre_tabla);
-        //$this->get_error($rs, 'Error en consulta datos');
+        $this->get_error($rs, 'Error en consulta datos');
         return $rs;
     }
     
