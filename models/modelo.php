@@ -24,7 +24,7 @@ function Modelo() {
         }
     
         public function Unir_equipo($id_user,$id_eq){
-            $stmt = $db->PrepareSP("BEGIN adodb.UnirseEq(:a1, :a2, :a3); END;");
+            $stmt = this->$db->PrepareSP("BEGIN adodb.UnirseEq(:a1, :a2, :a3); END;");
             $db->InParameter($stmt,$id_user,'a1');
             $db->InParameter($stmt,$id_eq,'a2');
             $db->OutParameter($stmt,$output,'a3');
