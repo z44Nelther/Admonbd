@@ -1,5 +1,5 @@
 <?php
-    class Usuario extends Modelo{
+    class Equipo extends Modelo{
 	public $nombre_tabla = 'Equipo';
     public $pk = 'id_equipo';
     public $er;
