@@ -22,6 +22,19 @@ function Modelo() {
         $sql_insert = $this->db->GetInsertSQL($this->nombre_tabla, $rs);
         return $this->get_error($this->db->Execute($sql_insert), 'Error en Modelo.inserta');
         }
-}
+    
+        public function Unir_equipo($id_user,$id_eq){
+            $stmt = $db->PrepareSP("BEGIN adodb.UnirseEq(:a1, :a2, :a3); END;");
+            $db->InParameter($stmt,$id_user,'a1');
+            $db->InParameter($stmt,$id_eq,'a2');
+            $db->OutParameter($stmt,$output,'a3');
+            $ok = $db->Execute($stmt);
+           if($ok){
+               echo "CORRECTO";
+           }else{
+               echo "INCORRECTO";
+           }
+            }
+        }
     
 ?>

@@ -7,6 +7,8 @@
   include ('../../models/Equipo.php');
   
   $Eq= new Equipo();
+   
+   $Eq->Unir_equipo(1,2);
 
 ?>
 
