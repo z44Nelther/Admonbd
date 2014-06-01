@@ -24,10 +24,14 @@ include ('../../models/Conexion.php');
                 <th class="text-center">Derrotas</th>
 				<th class="text-center">Unirse</th>
              </thead>
-  				<?php
+  				
+			</table>
+			
+			<?php
 			    
              $rs=$JTest->consulta_datos();
-             foreach($rs as $row){
+             foreach($rs as $row){ 
+            ?>
              <tr>
                     <td><?php echo $row[NOM_EQUIPO]; ?></td>
                     <td><?php echo $row[VICTORIAS]; ?></td>
@@ -36,12 +40,9 @@ include ('../../models/Conexion.php');
                     
                     
                 </tr>
-             }
+            <?php }
 			 
 			 ?>
-			</table>
-			
-			
 		
 		</div>
 		<div class="col-md-3 comienza col-md-offset-1">
