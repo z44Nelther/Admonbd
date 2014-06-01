@@ -32,7 +32,7 @@
              <tr> <form  method="POST">
                     <td>
 					    <div class="form-group">
-					    <input class="form-control" placeholder=".input-sm" style="background-color:transparent; " name="username" 
+					    <input class="form-control" placeholder="input-sm" style="background-color:transparent; " name="username" 
                                type="text" value="<?php echo $row['NOM_EQUIPO']; ?>" readonly>
 						</div>
                      </td>   
