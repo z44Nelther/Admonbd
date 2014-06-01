@@ -29,7 +29,7 @@ include ('../../models/Conexion.php');
 			
 			<?php
 			    
-             $rs=$JTest->consulta_datos();
+             $rs=$Equipo->consulta_datos();
              foreach($rs as $row){ 
             ?>
              <tr>
