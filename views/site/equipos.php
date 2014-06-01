@@ -24,10 +24,7 @@
                 <th class="text-center">Derrotas</th>
 				<th class="text-center">Unirse</th>
              </thead>
-  				
-			</table>
-			
-			<?php
+  				<?php
 			    
              $rs=$Eq->consulta_datos();
              foreach($rs as $row){ 
@@ -41,8 +38,11 @@
                     
                 </tr>
             <?php }
-			  print_r ($rs);
+			  
 			 ?>
+			</table>
+			
+			
 		
 		</div>
 		<div class="col-md-3 comienza col-md-offset-1">
