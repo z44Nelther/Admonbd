@@ -41,28 +41,12 @@ include ('../../models/Conexion.php');
                     <td><?php echo $row[COSTO]; ?></td>
                     
                 </tr>
-          <?php } ?>
-			<!--
-				
-				<tr>
-					<td>26/05/2014</td>
-					<td>league of legends world championship</td>
-					<td>32</td>
-					<td>Corea</td>
-				</tr>
-				<tr>
-					<td>26/05/2014</td>
-					<td>Parada Competitiva Argentina</td>
-					<td>32</td>
-					<td>Argentina</td>
-				</tr>
-				-->
-	
+          <?php } ?>	
 	
 		</table>
 		</div>
 		<div class="col-md-3 comienza col-md-offset-1">
-			<p>hola mundo</p>
+			
 		</div>
 	</div>
 </div>

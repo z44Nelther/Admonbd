@@ -22,7 +22,7 @@ private $ap_pat;
 private $ap_mat;
 private $nom_usuario;
 
-function Examen (){
+function Usuario (){
 	parent :: Modelo();
 
 }
