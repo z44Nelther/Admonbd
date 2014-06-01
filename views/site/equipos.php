@@ -24,27 +24,7 @@ include ('../../models/Conexion.php');
                 <th class="text-center">Derrotas</th>
 				<th class="text-center">Unirse</th>
              </thead>
-  				<tr>
-                	<td>Nalgónman</td>
-                    <td>55</td>
-                    <td>0</td>
-                    <td><input type="submit" value="Elegir equipo" class="btn btn-primary"/></td>
-                </tr>
-                <tr>
-                	<td>Grifindor</td>
-                    <td>30</td>
-                    <td>20</td>
-                    <td><input type="submit" value="Elegir equipo" class="btn btn-primary"/></td>
-                </tr>
-                <tr>
-                	<td>Makalakaka</td>
-                    <td>23</td>
-                    <td>50</td>
-                    <td><input type="submit" value="Elegir equipo" class="btn btn-primary"/></td>
-                </tr>
-			</table>
-			
-			<?php
+  				<?php
 			    
              $rs=$JTest->consulta_datos();
              foreach($rs as $row){
@@ -59,6 +39,9 @@ include ('../../models/Conexion.php');
              }
 			 
 			 ?>
+			</table>
+			
+			
 		
 		</div>
 		<div class="col-md-3 comienza col-md-offset-1">
