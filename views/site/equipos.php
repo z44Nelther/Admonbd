@@ -6,7 +6,7 @@ include ('../../models/Conexion.php');
   include ('../../models/modelo.php');
   include ('../../models/JobsTest.php');
   
-  $JTest= new JobsTest();
+  $Eq= new Equipo();
 
 ?>
 
@@ -29,7 +29,7 @@ include ('../../models/Conexion.php');
 			
 			<?php
 			    
-             $rs=$Equipo->consulta_datos();
+             $rs=$Eq->consulta_datos();
              foreach($rs as $row){ 
             ?>
              <tr>
