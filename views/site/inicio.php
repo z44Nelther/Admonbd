@@ -6,7 +6,6 @@ include ('../../models/Conexion.php');
   include ('../../models/modelo.php');
   include ('../../models/JobsTest.php');
   
-  
   $JTest= new JobsTest();
 
 ?>
