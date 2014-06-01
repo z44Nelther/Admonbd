@@ -25,4 +25,7 @@ public function get_atributos(){
             }
             return $rs;
         }
+ function Equipo(){
+    	parent::Modelo();
+    }
 ?>
