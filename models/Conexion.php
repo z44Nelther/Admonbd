@@ -7,7 +7,7 @@ class Conexion {
         function Conexion(){
             $this->db=NewADOConnection("oci8");
             $this->db->debug=ture;
-            $this->db->Connect("127.0.0.1","proyectoadmin","proyecto","admonbd2");
+            $this->db->Connect("192.168.0.10","proyectoadmin","proyecto","admonbd2");
         }
     }
 ?>
