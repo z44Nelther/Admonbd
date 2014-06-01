@@ -43,7 +43,7 @@ include ('../../models/Conexion.php');
                 </tr>
           <?php } 
             
-            print_r ($rs)?>	
+           ?>	
 	
 		</table>
 		</div>
