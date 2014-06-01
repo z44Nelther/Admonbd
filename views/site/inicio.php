@@ -44,12 +44,7 @@ include ('../../models/Conexion.php');
                 </tr>
           <?php } ?>
 			<!--
-				<tr>
-					<td>26/05/2014</td>
-					<td>5GTV</td>
-					<td>32</td>
-					<td>Mexico</td>
-				</tr>
+				
 				<tr>
 					<td>26/05/2014</td>
 					<td>league of legends world championship</td>
