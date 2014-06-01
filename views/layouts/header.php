@@ -39,10 +39,10 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav ">
             <li class="active"><a href="<?php echo BASEURL; ?>/views/site/inicio.php">Inicio</a></li>
-            <li ><a href="<?php echo BASEURL; ?>/views/site/inicio.php">Torneos</a></li>
-            <li><a href="<?php echo BASEURL; ?>/views/site/inicio.php">Equipos</a></li>
-            <li><a href="<?php echo BASEURL; ?>/views/site/inicio.php">Jugadores</a></li>
-            <li><a href="<?php echo BASEURL; ?>/views/site/inicio.php">Organizar</a></li>
+            <li ><a href="<?php echo BASEURL; ?>/views/site/Torneos.php">Torneos</a></li>
+            <li><a href="<?php echo BASEURL; ?>/views/site/Equipos.php">Equipos</a></li>
+            <li><a href="<?php echo BASEURL; ?>/views/site/Jugadores.php">Jugadores</a></li>
+            <li><a href="<?php echo BASEURL; ?>/views/site/Torneos.php">Organizar</a></li>
 
          
 
