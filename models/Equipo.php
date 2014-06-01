@@ -28,4 +28,5 @@ public function get_atributos(){
  function Equipo(){
     	parent::Modelo();
     }
+}
 ?>
