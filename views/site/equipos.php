@@ -33,7 +33,7 @@
                     <td><?php echo $row['NOM_EQUIPO']; ?></td>
                     <td><?php echo $row['VICTORIAS']; ?></td>
                     <td><?php echo $row['DERROTAS']; ?></td>
-                    <td><input type="submit" value="Elegir equipo" class="btn btn-primary"/></td>
+                    <td><input type="submit" value="Elegir equipo" class="btn btn-primary btn-sm"/></td>
                     
                     
                 </tr>
