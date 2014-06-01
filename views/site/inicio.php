@@ -34,11 +34,11 @@ include ('../../models/Conexion.php');
                 foreach($rs as $row){
 			?>
                 <tr>
-                    <td><?php echo $row[FECHA_INICIO]; ?></td>
-                    <td><?php echo $row[NOM_TORNEO]; ?></td>
-                    <td><?php echo $row[ID_JUEGO]; ?></td>
-                    <td><?php echo $row[MAX_PARTICIPANTES]; ?></td>
-                    <td><?php echo $row[COSTO]; ?></td>
+                    <td><?php echo $row['FECHA_INICIO']; ?></td>
+                    <td><?php echo $row['NOM_TORNEO']; ?></td>
+                    <td><?php echo $row['ID_JUEGO']; ?></td>
+                    <td><?php echo $row['MAX_PARTICIPANTES']; ?></td>
+                    <td><?php echo $row['COSTO']; ?></td>
                     
                 </tr>
           <?php } 
