@@ -41,7 +41,9 @@ include ('../../models/Conexion.php');
                     <td><?php echo $row[COSTO]; ?></td>
                     
                 </tr>
-          <?php } ?>	
+          <?php } 
+            
+            print_r ($rs)?>	
 	
 		</table>
 		</div>
