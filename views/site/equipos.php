@@ -4,7 +4,7 @@
   include ('../layouts/header.php');
 include ('../../models/Conexion.php');
   include ('../../models/modelo.php');
-  include ('../../models/JobsTest.php');
+  include ('../../models/Equipo.php');
   
   $Eq= new Equipo();
 
