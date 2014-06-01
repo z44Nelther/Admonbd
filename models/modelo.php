@@ -24,11 +24,12 @@ function Modelo() {
         }
     
         public function Unir_equipo($id_user,$id_eq){
-            $stmt = $this->db->PrepareSP("BEGIN UnirseEq(:a1, :a2); END;");
+            $stmt = $this->db->PrepareSP("BEGIN UnirseEq(:a1, :a2, :a3); END;");
             $this->db->InParameter($stmt,$id_user,'a1');
             $this->db->InParameter($stmt,$id_eq,'a2');
-            //$this->db->OutParameter($stmt,$output,'a3');
+            $this->db->OutParameter($stmt,$output,'a3');
             $ok = $this->db->Execute($stmt);
+            echo $output;
            if($ok){
                echo "CORRECTO";
            }else{
