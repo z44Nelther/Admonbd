@@ -33,12 +33,9 @@
                     <td>
                         
                        
-					    <div class="form-group <? echo $aux;?> ">
-						<label for="Altura">Username: </label>
-						<input class="form-control" name="username" type="text" value="<?php echo $row['NOM_EQUIPO']; ?>">
-						
-						
-					    </div>
+					    <div class="form-group">
+					    <input class="form-control" name="username" type="text" value="<?php echo $row['NOM_EQUIPO']; ?>">
+						</div>
                      </td>   </form>
                         
                         
