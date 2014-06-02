@@ -41,7 +41,7 @@ if (isset($_POST["nom_eq"])) {
                                type="text" value="<?php echo $row['NOM_EQUIPO']; ?>" readonly>
 						</div>
                      </td>   
-                  </form>
+                 
                         
                         
                         
@@ -49,7 +49,7 @@ if (isset($_POST["nom_eq"])) {
                     <td><?php echo $row['DERROTAS']; ?></td>
                     <td><input type="submit" value="Elegir equipo" class="btn btn-primary btn-xs"/></td>
                     
-                    
+                     </form>
                 </tr>
             <?php }
 			  
