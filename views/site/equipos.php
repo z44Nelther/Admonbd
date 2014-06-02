@@ -8,8 +8,11 @@
   
   $Eq= new Equipo();
    
-   $Eq->Unir_equipo(1,2);
-
+if (isset($_POST["nom_eq"])) {
+    
+    $sql="Select id_equipo from equipo where nom_equipo=".$_Post["nom_eq"];
+    $Eq->Unir_equipo(1,$Eq->consulta_sql($sql));
+}
 ?>
 
 
@@ -34,7 +37,7 @@
              <tr> <form  method="POST">
                     <td>
 					    <div class="form-group">
-					    <input class="form-control input-sm"style="background-color:transparent; " name="username" 
+					    <input class="form-control input-sm"style="background-color:transparent; " name="nom_eq" 
                                type="text" value="<?php echo $row['NOM_EQUIPO']; ?>" readonly>
 						</div>
                      </td>   

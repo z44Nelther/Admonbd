@@ -30,6 +30,7 @@ function Modelo() {
             $this->db->OutParameter($stmt,$output,'a3');
             $ok = $this->db->Execute($stmt);
             echo $output;
+            
            if($ok){
                echo "CORRECTO";
            }else{
