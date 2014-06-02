@@ -26,12 +26,12 @@ if (isset($_POST["nom_eq"])) {
 		<div class="col-md-8">
 		<div class="row">
             
-            <div class="col-md-4">
+            <div class="col-md-3">
 			<h1 class="text-left proxE">Lista de equipos</h1>
             </div>
             
-            <div class="col-md-4">
-                <a class="btn btn-default" href="#" role="button">Link</a>
+            <div class="text-left col-md-5" style="margin-top:25px;">
+                <a class="btn btn-default" href="#" role="button">Crear Equipo</a>
             </div>
 		</div>
 		<table class="table table-striped">
