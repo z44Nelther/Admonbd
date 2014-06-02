@@ -14,8 +14,9 @@ if (isset($_POST["nom_eq"])) {
     $r=$Eq->consulta_sql($sql);
       foreach($r as $rw){ 
         echo " Resultado =".$rw['ID_EQUIPO']; 
+          $Eq->Unir_equipo(1,$rw['ID_EQUIPO']);
       }
-    //$Eq->Unir_equipo(1,2);
+    
 }
 ?>
 
