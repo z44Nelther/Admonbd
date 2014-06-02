@@ -11,7 +11,7 @@
 if (isset($_POST["nom_eq"])) {
     
     $sql="Select id_equipo from equipo where nom_equipo='".$_POST["nom_eq"]."'";
-    $r=$Eq->consulta_sql($sql)
+    $r=$Eq->consulta_sql($sql);
         echo " Resultado =".$r['ID_EQUIPO']; 
     //$Eq->Unir_equipo(1,2);
 }
