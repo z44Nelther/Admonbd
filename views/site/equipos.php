@@ -25,7 +25,7 @@ if (isset($_POST["nom_eq"])) {
 	<div class="col-md-12 text-center" id="maindiv">
 		<div class="col-md-8">
 		<div class="">
-			<h1 class="text-left proxE">Lista de equipos</h1>
+			<h1 class="text-left proxE">Lista de equipos</h1><a class="btn btn-default" href="#" role="button">Link</a>
 		</div>
 		<table class="table table-striped">
 			<thead class="theader" >
