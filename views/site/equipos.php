@@ -12,7 +12,9 @@ if (isset($_POST["nom_eq"])) {
     
     $sql="Select id_equipo from equipo where nom_equipo='".$_POST["nom_eq"]."'";
     $r=$Eq->consulta_sql($sql);
-        echo " Resultado =".$r['ID_EQUIPO']; 
+      foreach($r as $rw){ 
+        echo " Resultado =".$rw['ID_EQUIPO']; 
+      }
     //$Eq->Unir_equipo(1,2);
 }
 ?>
