@@ -10,7 +10,7 @@
    
 if (isset($_POST["nom_eq"])) {
     
-    $sql="Select id_equipo from equipo where nom_equipo=".$_Post["nom_eq"];
+    $sql="Select id_equipo from equipo where nom_equipo=".$_POST["nom_eq"];
     $Eq->Unir_equipo(1,$Eq->consulta_sql($sql));
 }
 ?>
