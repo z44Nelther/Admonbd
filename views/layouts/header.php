@@ -1,4 +1,9 @@
-<?php define('BASEURL','http://192.168.0.10/admondb/Admonbd'); 
+<?php
+
+	if ( !isset($_SESSION['user']) ) {
+  $_SESSION['user'] = 'invitado';
+}
+ define('BASEURL','http://192.168.0.10/admondb/Admonbd'); 
  
  ?>
 <!DOCTYPE html>
@@ -49,12 +54,21 @@
 
 
           </ul>
+		  <?php 
+              if ( $_SESSION['user'] == 'invitado' ):                
+            ?>
           <ul class="nav navbar-nav navbar-right">
             <li ><a href="<?php echo BASEURL; ?>/views/site/registro.php">Registrarse</a></li>
-            <li><a href="<?php echo BASEURL; ?>/views/site/inicio.php">Log in</a></li>
+            <li><a href="<?php echo BASEURL; ?>/views/site/login.php">Log in</a></li>
 
 
           </ul>
+		  <?php 
+              else:
+          ?>
+			    <ul class="nav navbar-nav navbar-right">
+					  <li><a href="<?php echo BASEURL; ?>/views/site/logout.php">Log out</a></li>
+				</ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
