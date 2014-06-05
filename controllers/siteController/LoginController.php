@@ -9,6 +9,7 @@
 			$rs = $this->consulta_sql(" select * from usuario where alias = '".$datos['nom_usuario']."'  ");
         	$rows = $rs->GetArray();
         	print_r($rows);
+        	print_r($datos);
         	if(count($rows) > 0){
         		if ($rows[0]['6']== $datos['PASSWORD']) {
         		
