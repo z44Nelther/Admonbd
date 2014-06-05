@@ -15,7 +15,7 @@
         		
         		echo "INICIANDO :D";
 
-        			//$this->iniciarSesion($rows['0']['alias'],$rows['0']['alias']);echo "INICIANDO :D";
+        			$this->iniciarSesion($rows['0']['alias'],$rows['0']['alias']);echo "INICIANDO :D";
         		}else{
         					echo "UPS D:";
 
@@ -31,7 +31,7 @@
 		public function iniciarSesion($rol,$nomuser){
 			$_SESSION['user'] = $rol;
 			$_SESSION['nom_user'] = $nomuser;
-			header("Location: inicio.php");
+			//header("Location: inicio.php");
 		}
 		public function cerrarSesion(){
 			session_destroy();
