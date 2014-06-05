@@ -10,7 +10,7 @@
         	$rows = $rs->GetArray();
         	print_r($rows);
         	if(count($rows) > 0){
-        		if ($rows[0]['PASSWORD']== $datos['PASSWORD']) {
+        		if ($rows[0]['6']== $datos['PASSWORD']) {
         		
         		echo "INICIANDO :D";
 
