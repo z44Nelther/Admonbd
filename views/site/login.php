@@ -10,7 +10,7 @@
      
 
       $login = new LoginController();
-      if (isset($_POST['email'])) {
+      if (isset($_POST['nom_usuario'])) {
         $login->validaUsuario($_POST);
       }
       
