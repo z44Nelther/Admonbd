@@ -8,7 +8,7 @@
 		public function validaUsuario($datos){
 			$rs = $this->consulta_sql(" select * from usuario where nom_usuario = '".$datos['nom_usuario']."'  ");
         	$rows = $rs->GetArray();
-        	print_r(rows);
+        	print_r($rows);
         	if(count($rows) > 0){
         		if ($rows['0']['password']== $datos['password']) {
         		
@@ -21,7 +21,7 @@
 		     	}
 	     	}else{
 	     		$this->muestra_errores = true;
-	     		$this->errores[] = 'este email no existe';
+	     		$this->errores[] = 'este usuario no existe';
 	     	}
 
 		}
