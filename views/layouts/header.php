@@ -51,6 +51,9 @@
             <li><a href="<?php echo BASEURL; ?>/views/site/equipos.php">Equipos</a></li>
             <li><a href="<?php echo BASEURL; ?>/views/site/Jugadores.php">Jugadores</a></li>
             <li><a href="<?php echo BASEURL; ?>/views/site/organizar.php">Organizar</a></li>
+			<?php
+              endif;
+            ?>
 
           </ul>
          
@@ -76,8 +79,5 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
- <?php
-              endif;
-            ?>
     <div class="container theme-showcase" role="main">
 
