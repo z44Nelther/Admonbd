@@ -9,7 +9,7 @@
 			$rs = $this->consulta_sql(" select * from usuario where email = '".$datos['nom_usuario']."'  ");
         	$rows = $rs->GetArray();
         	if(count($rows) > 0){
-        		if ($rows['0']['password']== md5($datos['password'])) {
+        		if ($rows['0']['password']== $datos['password']) {
         			$this->iniciarSesion($rows['0']['nom_usuario'],$rows['0']['nom_usuario']);
         		}else{
 		     		$this->muestra_errores = true;
