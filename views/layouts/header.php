@@ -60,10 +60,7 @@
             <li ><a href="<?php echo BASEURL; ?>/views/site/registro.php">Registrarse</a></li>
             <li><a href="<?php echo BASEURL; ?>/views/site/login.php">Log in</a></li>
 
-		<?php
-              endif;
-            ?>
-
+		
           </ul>
 		  <?php 
               else:
