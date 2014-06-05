@@ -33,7 +33,7 @@
     <form role="form" method="POST" >
       <div class="form-group">
         <label for="exampleInputEmail1">Usuario:</label>
-        <input type="email" class="form-control" id="email" name="nom_usuario" >
+        <input type="text" class="form-control" id="email" name="nom_usuario" >
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password:</label>
