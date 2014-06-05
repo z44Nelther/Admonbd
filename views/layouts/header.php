@@ -53,6 +53,10 @@
             <li><a href="<?php echo BASEURL; ?>/views/site/organizar.php">Organizar</a></li>
 
           </ul>
+          <?php
+              endif;
+            ?>
+
 		  <?php 
               if ( $_SESSION['user'] == 'invitado' ):                
             ?>
