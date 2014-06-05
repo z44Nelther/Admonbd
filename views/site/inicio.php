@@ -1,18 +1,11 @@
 <?php session_start();
-  include ('../../libs/adodb5/adodb-pager.inc.php');
-  include ('../../libs/adodb5/adodb.inc.php');
+  
   include ('../layouts/header.php');
-include ('../../models/Conexion.php');
-  include ('../../models/modelo.php');
-  include ('../../models/JobsTest.php');
   
   $JTest= new JobsTest();
 
 ?>
 
-<?php 
-              if ( $_SESSION['user'] != 'invitado' ):                
-            ?>
 <div class="row">
 	<div class="col-md-12 text-center" id="maindiv">
 		<div class="col-md-8">
@@ -54,8 +47,5 @@ include ('../../models/Conexion.php');
 		</div>
 	</div>
 </div>
-<?php
-              endif;
-            ?>
 
 

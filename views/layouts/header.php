@@ -44,14 +44,13 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav ">
             <li class="active"><a href="<?php echo BASEURL; ?>/views/site/inicio.php">Inicio</a></li>
+            <?php
+            	if($_SESSION['user'] != 'invitado'):
+            	?>
             <li ><a href="<?php echo BASEURL; ?>/views/site/torneos.php">Torneos</a></li>
             <li><a href="<?php echo BASEURL; ?>/views/site/equipos.php">Equipos</a></li>
             <li><a href="<?php echo BASEURL; ?>/views/site/Jugadores.php">Jugadores</a></li>
             <li><a href="<?php echo BASEURL; ?>/views/site/organizar.php">Organizar</a></li>
-
-         
-
-
 
           </ul>
 		  <?php 
@@ -61,6 +60,9 @@
             <li ><a href="<?php echo BASEURL; ?>/views/site/registro.php">Registrarse</a></li>
             <li><a href="<?php echo BASEURL; ?>/views/site/login.php">Log in</a></li>
 
+		<?php
+              endif;
+            ?>
 
           </ul>
 		  <?php 
