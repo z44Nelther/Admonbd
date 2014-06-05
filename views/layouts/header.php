@@ -53,9 +53,7 @@
             <li><a href="<?php echo BASEURL; ?>/views/site/organizar.php">Organizar</a></li>
 
           </ul>
-          <?php
-              endif;
-            ?>
+         
 
 		  <?php 
               if ( $_SESSION['user'] == 'invitado' ):                
@@ -78,6 +76,8 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-
+ <?php
+              endif;
+            ?>
     <div class="container theme-showcase" role="main">
 
