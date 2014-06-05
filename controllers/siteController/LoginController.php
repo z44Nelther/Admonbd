@@ -15,7 +15,7 @@
         		
         		echo "INICIANDO :D";
 
-        			$this->iniciarSesion($rows['0']['alias'],$rows['0']['alias']);echo "INICIANDO :D";
+        			$this->iniciarSesion($rows['0']['5'],$rows['0']['5']);echo "INICIANDO :D";
         		}else{
         					echo "UPS D:";
 
