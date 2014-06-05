@@ -10,7 +10,7 @@
         	$rows = $rs->GetArray();
         	print_r($rows);
         	if(count($rows) > 0){
-        		if ($rows['6']['password']== $datos['PASSWORD']) {
+        		if ($rows[6]['password']== $datos['PASSWORD']) {
         		
         			//$this->iniciarSesion($rows['5']['alias'],$rows['5']['alias']);echo "INICIANDO :D";
         		}else{
