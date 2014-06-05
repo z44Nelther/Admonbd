@@ -6,13 +6,13 @@
 			 parent::Usuario();
 		}
 		public function validaUsuario($datos){
-			$rs = $this->consulta_sql(" select * from usuario where nom_usuario = '".$datos['nom_usuario']."'  ");
+			$rs = $this->consulta_sql(" select * from usuario where alias = '".$datos['nom_usuario']."'  ");
         	$rows = $rs->GetArray();
         	print_r($rows);
         	if(count($rows) > 0){
         		if ($rows['0']['password']== $datos['password']) {
         		
-        			$this->iniciarSesion($rows['0']['nom_usuario'],$rows['0']['nom_usuario']);echo "INICIANDO :D";
+        			$this->iniciarSesion($rows['0']['alias'],$rows['0']['alias']);echo "INICIANDO :D";
         		}else{
         					echo "UPS D:";
 
