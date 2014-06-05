@@ -47,7 +47,7 @@
             <?php
             	if($_SESSION['user'] != 'invitado'):
             	?>
-            <li ><a href="<?php echo BASEURL; ?>/views/site/torneos.php">Torneos</a></li>
+            <li ><a href="<?php echo BASEURL; ?>/views/site/torneos.php">Torneos <?php $_SESSION['user'] ?></a></li>
             <li><a href="<?php echo BASEURL; ?>/views/site/equipos.php">Equipos</a></li>
             <li><a href="<?php echo BASEURL; ?>/views/site/Jugadores.php">Jugadores</a></li>
             <li><a href="<?php echo BASEURL; ?>/views/site/organizar.php">Organizar</a></li>
