@@ -13,6 +13,8 @@
         		
         			$this->iniciarSesion($rows['0']['nom_usuario'],$rows['0']['nom_usuario']);echo "INICIANDO :D";
         		}else{
+        					echo "UPS D:";
+
 		     		$this->muestra_errores = true;
 		     		$this->errores[] = 'Password incorrecto';
 		     	}
