@@ -13,9 +13,9 @@
       if (isset($_POST['nom_usuario'])) {
         $login->validaUsuario($_POST);
       }
-      
+          include ('../layouts/header.php');
       echo $_SESSION['user'];
-      include ('../layouts/header.php');
+  
 ?>
 
 <div class="row">
