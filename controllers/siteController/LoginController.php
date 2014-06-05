@@ -11,7 +11,7 @@
         	print_r($rows);
         	print_r($datos);
         	if(count($rows) > 0){
-        		if ($rows[0]['6']== $datos['PASSWORD']) {
+        		if ($rows[0]['6']== $datos['password']) {
         		
         		echo "INICIANDO :D";
 
