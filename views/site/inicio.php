@@ -10,7 +10,9 @@ include ('../../models/Conexion.php');
 
 ?>
 
-
+<?php 
+              if ( $_SESSION['user'] != 'invitado' ):                
+            ?>
 <div class="row">
 	<div class="col-md-12 text-center" id="maindiv">
 		<div class="col-md-8">
@@ -52,6 +54,8 @@ include ('../../models/Conexion.php');
 		</div>
 	</div>
 </div>
-
+<?php
+              endif;
+            ?>
 
 

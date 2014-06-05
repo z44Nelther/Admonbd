@@ -15,7 +15,7 @@ public $atributos = array(
 
 public $errores = array( );
 
-private $alias
+private $alias;
 private $email;
 private $password;
 private $ap_pat;
@@ -37,7 +37,7 @@ function Usuario (){
 
 
     public  function get_nomusuario(){
-        return $->$nom_usuario;
+        return $nom_usuario;
     }
     public function set_nomusuario(){
         $er = new er ();
@@ -52,7 +52,7 @@ function Usuario (){
 
 
     public  function get_appat(){
-        return $->$ap_pat;
+        return $ap_pat;
     }
     public function set_appat(){
         $er = new er ();
@@ -65,7 +65,7 @@ function Usuario (){
         }
     }
     public  function get_apmat(){
-        return $->$ap_mat;
+        return $ap_mat;
     }
     public function set_apmat(){
         $er = new er ();

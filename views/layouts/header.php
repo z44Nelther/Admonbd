@@ -69,6 +69,9 @@
 			    <ul class="nav navbar-nav navbar-right">
 					  <li><a href="<?php echo BASEURL; ?>/views/site/logout.php">Log out</a></li>
 				</ul>
+		<?php
+              endif;
+            ?>
         </div><!--/.nav-collapse -->
       </div>
     </div>
