@@ -12,6 +12,8 @@
         	if(count($rows) > 0){
         		if ($rows[0]['PASSWORD']== $datos['PASSWORD']) {
         		
+        		echo "INICIANDO :D";
+
         			//$this->iniciarSesion($rows['0']['alias'],$rows['0']['alias']);echo "INICIANDO :D";
         		}else{
         					echo "UPS D:";
