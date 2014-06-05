@@ -14,7 +14,7 @@
         $login->validaUsuario($_POST);
       }
       
-      
+      echo $_SESSION['user'];
       include ('../layouts/header.php');
 ?>
 
