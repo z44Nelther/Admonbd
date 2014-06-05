@@ -31,7 +31,7 @@
 		public function iniciarSesion($rol,$nomuser){
 			$_SESSION['user'] = $rol;
 			$_SESSION['nom_user'] = $nomuser;
-			//header("Location: inicio.php");
+			header("Location: inicio.php");
 		}
 		public function cerrarSesion(){
 			session_destroy();
