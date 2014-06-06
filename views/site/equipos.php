@@ -1,3 +1,4 @@
+
 <?php session_start();
   include ('../../libs/adodb5/adodb-pager.inc.php');
   include ('../../libs/adodb5/adodb.inc.php');
@@ -5,6 +6,7 @@
  include ('../../models/Conexion.php');
   include ('../../models/modelo.php');
   include ('../../models/Equipo.php');
+include ('../../models/Usuario.php');
   
   $Eq= new Equipo();
   $us = new Usuario();

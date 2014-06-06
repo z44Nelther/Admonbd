@@ -42,7 +42,7 @@ if (isset($_POST["username"])){
 		}else{
 		$aux5=" has-error";
 		}
-    if(count($aux->errores)>0){
+    if(count($usr->errores)>0){
 
 		}else{
 		if($usr->inserta($usr->get_atributos())){
