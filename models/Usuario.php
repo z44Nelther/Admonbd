@@ -39,12 +39,14 @@ function Usuario (){
     public  function get_nomusuario(){
         return $nom_usuario;
     }
-    public function set_nomusuario(){
+    public function set_nomusuario($valor){
         $er = new er ();
         if($er->username($valor)==true){
             $this->nom_usuario = trim($valor);
             return true;
         }else{
+            $this->errores[] = "nombre no valido"; 
+        
          $this->nom_usuario = trim($valor);
          return false;   
         }
@@ -54,26 +56,28 @@ function Usuario (){
     public  function get_appat(){
         return $ap_pat;
     }
-    public function set_appat(){
+    public function set_appat($valor){
         $er = new er ();
         if($er->username($valor)==true){
             $this->ap_pat = trim($valor);
             return true;
         }else{
          $this->ap_pat = trim($valor);
+            $this->errores[] = "appat no valido"; 
          return false;   
         }
     }
     public  function get_apmat(){
         return $ap_mat;
     }
-    public function set_apmat(){
+    public function set_apmat($valor){
         $er = new er ();
         if($er->username($valor)==true){
             $this->ap_mat = trim($valor);
             return true;
         }else{
-         $this->ap_mat = trim($valor);
+            $this->errores[] = "ap.mat no valido"; 
+            $this->ap_mat = trim($valor);
          return false;   
         }
     }
@@ -86,17 +90,20 @@ function Usuario (){
 
         if($er->username($valor)==true){
 
-            $rs = $this->consulta_sql("select * from usuario where alias = '$valor'");
-            $rows = $rs->GetArray();
+            //$rs = $this->consulta_sql("select * from usuario where alias = '$valor'");
+            //$rows = $rs->GetArray();
 
-            if(count($rows) > 0){
+           /* if(count($rows) > 0){
              $this->alias = trim($valor);
 
                 $this->errores[] = "Este alias (".$valor.") ya esta registrado"; 
             }else{
                 $this->alias = trim($valor);
                 return true;
-            }
+            }*/
+            $this->alias = trim($valor);
+                echo "hola";
+                return true;
            }else{
             $this->errores[] = "alias no valido"; 
             $this->alias = trim($valor);
