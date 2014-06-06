@@ -12,12 +12,12 @@
   $usr = new Usuario();
 
 if (isset($_POST["username"])){
-    if($usr->set_nomusuario($_POST["username"])){
+    if($usr->set_nomusuario($_POST["nombre"])){
 		  $aux=" has-success";
 		}else{
 		$aux=" has-error";
 		}
-    if($usr->set_alias($_POST["nombre"])){
+    if($usr->set_alias($_POST["username"])){
 		  $aux1=" has-success";
 		}else{
 		$aux1=" has-error";
