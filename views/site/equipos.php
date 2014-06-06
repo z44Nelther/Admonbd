@@ -19,7 +19,7 @@ if (isset($_POST["nom_eq"])) {
     $ro=$r2->GetArray();
       foreach($r as $rw){ 
         echo " Resultado =".$rw['ID_EQUIPO']; 
-          $Eq->Unir_equipo($ro[0]['ID_USUARIO'],$rw['ID_EQUIPO']);
+          $Eq->Unir_equipo($ro[0][0],$rw['ID_EQUIPO']);
       }
     
 }
