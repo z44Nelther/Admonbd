@@ -8,7 +8,7 @@ public $atributos = array(
 		'nom_usuario'=>array(),
 		'ap_pat'=>array(),
 		'ap_mat'=>array(),
-		'correo'=>array(),
+		'email'=>array(),
 		'alias'=>array(),
         'password'=>array(),
   );
