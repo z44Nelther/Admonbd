@@ -45,7 +45,7 @@ if (isset($_POST["username"])){
     if(count($aux->errores)>0){
 
 		}else{
-		if($usr->inserta($exm->get_atributos())){
+		if($usr->inserta($usr->get_atributos())){
 		echo " OK ";
 		}else{
 
