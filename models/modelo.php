@@ -20,7 +20,8 @@ function Modelo() {
     
         public function inserta($rs) {
         $sql_insert = $this->db->GetInsertSQL($this->nombre_tabla, $rs);
-        return $this->get_error($this->db->Execute($sql_insert), 'Error en Modelo.inserta');
+            $this->db->Execute($sql_insert);
+        //return $this->get_error($this->db->Execute($sql_insert), 'Error en Modelo.inserta');
         }
     
         public function Unir_equipo($id_user,$id_eq){
