@@ -15,7 +15,7 @@ if (isset($_POST["nom_eq"])) {
     $sql="Select id_equipo from equipo where nom_equipo='".$_POST["nom_eq"]."'";
     $sql2="Select id_usuario from equipo where alias='".$_SESSION["user"]."'";
     $r=$Eq->consulta_sql($sql);
-    $r2=$us->consulta_sql($sql);
+    $r2=$us->consulta_sql($sql2);
     $ro=$r2->GetArray();
       foreach($r as $rw){ 
         echo " Resultado =".$rw['ID_EQUIPO']; 
